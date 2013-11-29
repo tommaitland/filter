@@ -23,7 +23,7 @@ Filterable elements should have their tags comma separated in `data-filter-tags`
 
 ### Demo
 
-*Coming soon*
+[JSFiddle](http://jsfiddle.net/tommaitland/twU4b/)
 
 ### Support
 
