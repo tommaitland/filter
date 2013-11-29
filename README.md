@@ -12,10 +12,14 @@ $(element).filter({
 ```
 
 Set the tag to filter with `data-filter`, eg:
-`<a data-filter="tag">Tag</a>`
+```
+<a data-filter="tag">Tag</a>
+```
 
 Filterable elements should have their tags comma separated in `data-filter-tags`, eg:
-`<div data-filter-tags="tag1,tag2,tag3">This is a block</a>`
+```
+<div data-filter-tags="tag1,tag2,tag3">This is a block</a>
+```
 
 ## Demo
 
