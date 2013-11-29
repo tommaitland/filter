@@ -21,7 +21,7 @@
     $.fn.filter = function (options) {
  
         var defaults = {
-            nav: 'nav' //
+            nav: '[data-filter]' //
         }
 
         var $this = this,
@@ -33,7 +33,7 @@
             
             var $element = $(this);
 
-            $(settings.nav).find('a').each( function() {
+            $(settings.nav).each( function() {
 
                 $(this).click( function(event) {
 
