@@ -21,7 +21,8 @@
     $.fn.filter = function (options) {
  
         var defaults = {
-            nav: '[data-filter]' //
+            nav: '[data-filter]',
+            showAny: false
         }
 
         var $this = this,
@@ -54,8 +55,14 @@
                         var terms = $(this).data('filter-tags').split(','),
                             show = null;
 
-                        for (var i=0;i<selected.length;i++) {
-                            show = ($.inArray(selected[i], terms) >= 0 && show !== false);
+                        if (settings.showAny) {
+                            for (var i=0;terms.length;i++) {
+                                show ($.inArray(terms[i], selected)) >= 0 && show !== false);
+                            }
+                        } else {
+                            for (var i=0;i<selected.length;i++) {
+                                show = ($.inArray(selected[i], terms) >= 0 && show !== false);
+                            }
                         }
 
                         if (show || selected.length == 0) {
