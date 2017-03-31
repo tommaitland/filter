@@ -56,8 +56,8 @@
                             show = null;
 
                         if (settings.showAny) {
-                            for (var i=0;terms.length;i++) {
-                                show ($.inArray(terms[i], selected)) >= 0 && show !== false);
+                            for (var i=0;i<terms.length;i++) {
+                                show = ($.inArray(terms[i], selected)) >= 0 && show !== false);
                             }
                         } else {
                             for (var i=0;i<selected.length;i++) {
